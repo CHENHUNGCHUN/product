@@ -15,6 +15,7 @@ for item in products:
 #     for product in products:
 #         f.write(product[0] + ',' + str(product[1]) + '\n')
 
-with open('product.csv','a') as f:
+with open('product.csv','a',encoding='utf-8') as f:
+    f.write('商品'+','+'價格'+'\n')
     for product in products:
         f.write(product[0] + ',' + str(product[1]) + '\n')
